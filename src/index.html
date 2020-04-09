@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Immobuy</title>
+</head>
+
+<body>
+    <header id="header" class="d-flex align-items-center">
+        <nav class=" navbar navbar-expand-lg  navbar-light justify-content-xl-between p-0">
+            <a class="navbar-brand m-0 p-0" id="logo" href="#">
+                <img src="../assets/svg/logo.svg" alt="immobuy logo">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-responsive"
+                aria-controls="nav-responsive" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class=" flex-lg-grow-0 collapse navbar-collapse " id="nav-responsive">
+                <ul class="navbar-nav nav-list align-items-center">
+                    <li class="nav-item ">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Produkte</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">So geht‘s</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Über uns</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link btn-activity" href="#">Activity Login</a>
+                    </li>
+
+                    <li class="nav-item dropdown" id="ch-lang">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="../assets/img/flag-au.png" alt="">
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">
+                                <img src="../assets/img/flag-uk.png" alt="">
+                            </a>
+                            <a class="dropdown-item" href="#">
+                                <img src="../assets/img/flag-fr.png" alt="">
+                            </a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <article class="hero-article container mx-auto">
+                <h2 class="article-title">Schnell. Direkt. Sicher.</h2>
+                <p class="article-text">
+                    Für viele ist der Verkauf einer Immobilie eine vollkommen neue Erfahrung
+                    und verursacht Unsicherheit. Aus diesem Grund und der Erfahrung der letzten
+                    Jahre erfolgreich im Immobilien Ankauf haben wir es sich zum Ziel gesetzt
+                    mit dem Activity Log diesen Verkaufsprozess vertrauter & transparent
+                    zu gestalten. Einfacher geht der Immobilien Verkauf nicht mehr.
+                </p>
+                <button class="article-button">Unverbindliche Anfrage senden</button>
+                <p class="oder">oder</p>
+                <h3 class="article-more">Demo Ansehen</h3>
+                <button class="scr-dwn-btn" id="other">
+                    <img src="../assets/svg/scroll_down.svg" alt="scroll-down">
+                </button>
+            </article>
+        </section>
+        <section class="steps">
+            <article class="d-flex container">
+                <div class="step-number ">
+                    <p>1</p>
+                </div>
+                <article class="step-art">
+                    <h2>Daten eintragen</h2>
+                    <p>
+                        Im Activitylog können sie spielend Daten
+                        und Fotos uploaden, diese Daten benötigen
+                        wir, um eine grobe Analyse durchführen
+                        zu können. Wir vergleichen Ihre Daten mit
+                        den uns aktuellen vorliegenden, offentlich
+                        zugänglichen Verkaufsdatenbanken.
+                    </p>
+                </article>
+            </article>
+        </section>
+        <section id="personal-data">
+            <form action="#" class="data-form row col-9 mx-auto" method="POST">
+                <div class="form-image">
+                    <img src="../assets/svg/person_icon.svg" alt="Persönliche Daten">
+                    <h2>Persönliche Daten</h2>
+                </div>
+                <div class="row">
+                    <div class="form-group col-4">
+                        <label for="tx-Vorname">Vorname:</label>
+                        <input type="text" class="form-control" id="tx-Vorname" placeholder="Jane">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Nachname">Nachname:</label>
+                        <input type="text" class="form-control" id="tx-Nachname" placeholder="Doe">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Email">Email:</label>
+                        <input type="email" class="form-control" id="tx-Email" placeholder="jane-doe@email.com ">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Sozial">Sozialversicherungsnummer:</label>
+                        <input type="text" class="form-control" id="tx-Sozial" placeholder="12 123456 J 123">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Kontonummer">Kontonummer:</label>
+                        <input type="text" class="form-control" id="tx-Kontonummer" placeholder="AT12123456123456123">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Wohnhaft">Wohnhaft:</label>
+                        <input type="text" class="form-control" id="tx-Wohnhaft" placeholder="Österreich">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Geburtstag">Geburtstag:</label>
+                        <input type="date" value="1987-02-01" class="form-control date" id="tx-Geburtstag">
+                    </div>
+                </div>
+                <button type="button" class="sub-form">Speichern der Daten</button>
+            </form>
+            <form action="#" class="data-form row col-9 mx-auto" method="POST">
+                <div class="form-image">
+                    <img src="../assets/svg/home_icon.svg" alt="Persönliche Daten">
+                    <h2>Immobilien Daten:</h2>
+                </div>
+                <div class="row">
+                    <div class="form-group col-4">
+                        <label for="tx-Adresse">Adresse der zu verkaufenden Wohnung:</label>
+                        <input type="text" class="form-control" id="tx-Adresse" placeholder="Lorem ipsum">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Bundesland">Bundesland:</label>
+                        <input type="text" class="form-control" id="tx-Bundesland" placeholder="Dolorsitamet">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Postleitzahl">Postleitzahl:</label>
+                        <input type="number" class="form-control" id="tx-Postleitzahl" placeholder="1234">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Ort">Ort:</label>
+                        <input type="text" class="form-control" id="tx-Ort" placeholder="Laoreet dolore">
+                    </div>
+
+                    <div class="form-group col-4">
+                        <label for="tx-Straxe">Straße:</label>
+                        <input type="text" class="form-control" id="tx-Straxe" placeholder="Magna Aliquam Erat">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Hausnummer">Hausnummer:</label>
+                        <input type="number" class="form-control" id="tx-Hausnummer" placeholder="56">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Stiege">Stiege:</label>
+                        <input type="text" class="form-control" id="tx-Stiege" placeholder="Laoreet dolore">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Stockwerk">Stockwerk:</label>
+                        <input type="number" class="form-control" id="tx-Stockwerk" placeholder="2">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Turnummer">Türnummer:</label>
+                        <input type="number" class="form-control" id="tx-Turnummer" placeholder="4">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Baujahr">Baujahr:</label>
+                        <input type="number" class="form-control" id="tx-Baujahr" placeholder="1984">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-Hausverwaltung">Hausverwaltung:</label>
+                        <input type="text" class="form-control" id="tx-Hausverwaltung" placeholder="Sediam nonumm ">
+                    </div>
+                    <div class="form-group col-4">
+                        <label for="tx-BK">BK im Monat:</label>
+                        <input type="number" class="form-control" id="tx-BK" placeholder="34.56">
+                    </div>
+                </div>
+                <div class="mt-5">
+                    <div class="row form-group mt-5">
+                        <label>Ausstattung der Wohnung:</label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Lift" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Lift">Lift</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Stellplatz" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Stellplatz">Stellplatz</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Terrasse" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Terrasse">Terrasse</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Garage" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Garage">Garage</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Balkon" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Balkon">Balkon/Loggia</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Keller" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Keller">Keller</label>
+                        </div>
+                    </div>
+                    <div class="row form-group mt-5">
+                        <label>Heizung:</label>
+                    </div>
+                    <div class="row">
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Zentralheizung" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Zentralheizung">Zentralheizung</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Strom" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Strom">Strom</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Gas" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Gas">Gas</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-ol" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-ol">Öl</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Infrarot" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Infrarot">Infrarot</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Fernwarme" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Fernwarme">Fernwärme</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Fussbodenheizung" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Fussbodenheizung">Fussbodenheizung</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Flussiggas" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Flussiggas">Flüssiggas</label>
+                        </div>
+                        <div class="form-group   col-4 custom-radio custom-control-inline">
+                            <input type="checkbox" id="rd-Pellets" class="custom-control-input">
+                            <label class="custom-control-label" for="rd-Pellets">Pellets</label>
+                        </div>
+                    </div>
+
+                </div>
+                <button type="button" class="sub-form">Speichern der Daten</button>
+            </form>
+            <form action="#" class="data-form row col-9 mx-auto" method="POST">
+                <div class="form-image">
+                    <img src="../assets/svg/person_icon.svg" alt="Persönliche Daten">
+                    <h2>Dokumentensammlung: </h2>
+                    <p class="grom-img-em">(Dokumente hochladen)</p>
+                </div>
+                <div class="row">
+                    <div class="form-group dif-group col-4">
+                        <div class="lung-item">
+                            <p>Wohnungseigentumsvertrag</p>
+                            <a href="#">&uarr;</a>
+                        </div>
+                    </div>
+                    <div class="form-group dif-group col-4">
+                        <div class="lung-item">
+                            <p>BK. Abrechnung letztes Jahr</p>
+                            <a href="#">&uarr;</a>
+                        </div>
+                    </div>
+                    <div class="form-group dif-group col-4">
+                        <div class="lung-item" >
+                            <p>BK Vorschau</p>
+                            <a href="#">&uarr;</a>
+                        </div>
+                    </div>
+                    <div class="form-group dif-group col-4">
+                        <div class="lung-item">
+                            <p>Nutzwertgutachten</p>
+                            <a href="#">&uarr;</a>
+                        </div>
+                    </div>
+                    <div class="form-group dif-group col-4">
+                        <div class="lung-item">
+                            <p>Kaufvertrag Entwurf/Beglaubigt</p>
+                            <a href="#">&uarr;</a>
+                        </div>
+                    </div>
+                    <div class="form-group dif-group col-4">
+                        <div class="lung-item">
+                            <p>Kaufvertragsentwurf</p>
+                            <a href="#">&uarr;</a>
+                        </div>
+                    </div>
+                    <div class="form-group dif-group col-4">
+                        <div class="lung-item">
+                            <p>Treuhandvereinbarung unterschrieben</p>
+                            <a href="#">&uarr;</a>
+                        </div>
+                    </div>
+                    <div class="form-group dif-group col-4">
+                        <div class="lung-item">
+                            <p>Mietvertrag Entwurf/Unterschrieben</p>
+                            <a href="#">&uarr;</a>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="sub-form">Alle Daten senden</button>
+            </form>
+        </section>
+        <section class="steps">
+            <article class="d-flex container">
+                <div class="step-number ">
+                    <p>2</p>
+                </div>
+                <article class="step-art">
+                    <h2>Activity Protokoll</h2>
+                    <p>
+                        Mit dem Activitylog ist es Ihnen rund um 
+                        die Uhr möglich den Verkaufsprozess digital 
+                        mitzuverfolgen und mitzugestalten. Alle von 
+                        uns durchgeführten Aktivitäten können sie
+                        unten in der Übersicht mit-verfolgen. 
+                    </p>
+                </article>
+            </article>
+        </section>
+        <section  id="graphic-map">
+            <img class="col-10 " src="../assets/svg/diagram.png" alt="Immobuy diagram">
+        </section>
+    </main>
+    <footer id="footer">
+        <div class="row col-11">
+            <div class="col-6 f-logo-place">
+                <img src="../assets/svg/logo_title.svg" alt="Immobuy logo">
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="../assets/js/script.js"></script>
+</body>
+</html>
